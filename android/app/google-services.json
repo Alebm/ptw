@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "182706197976",
+    "project_id": "playtowin-pixelheart",
+    "storage_bucket": "playtowin-pixelheart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182706197976:android:40baeb70e39fb992fd4ead",
+        "android_client_info": {
+          "package_name": "com.pixelheart.playtowin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182706197976-pn5kl2s63kuro1nfo67h0hv4bmcmc1rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8WKIVuxDDrvVfGb4dQYbqQMqyqxcMeSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182706197976-pn5kl2s63kuro1nfo67h0hv4bmcmc1rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
