@@ -51,6 +51,13 @@ class _personState extends State<person> {
       child: Container(
         height: 300,
         width: 300,
+        child: Column(
+          children: [
+            ListTile(
+              title: Text('Nombre:'),
+            )
+          ],
+        ),
       ),
     );
   }
