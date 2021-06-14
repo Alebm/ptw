@@ -21,6 +21,19 @@ class _personState extends State<person> {
             style: _esiloTexto,
           ),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          unselectedItemColor: Colors.white,
+          selectedItemColor: Color(0xffFB8500),
+          elevation: 5,
+          backgroundColor: Color(0xff023047),
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: Icon(Icons.category), label: 'Categorias'),
+            //backgroundColor: Colors.white),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Perfil'),
+            //backgroundColor: Colors.white),
+          ],
+        ),
         body: Column(
           children: [
             fotoPerfil(),
