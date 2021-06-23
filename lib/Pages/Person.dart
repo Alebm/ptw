@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-class person extends StatefulWidget {
-  person({Key? key}) : super(key: key);
+class Person extends StatefulWidget {
+  Person({Key? key}) : super(key: key);
 
   @override
-  _personState createState() => _personState();
+  _PersonState createState() => _PersonState();
 }
 
-class _personState extends State<person> {
+class _PersonState extends State<Person> {
   final _esiloTexto = new TextStyle(fontSize: 20, color: Color(0xffFB8500));
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xff219EBC),
         appBar: AppBar(
           elevation: 5,
           backgroundColor: Color(0xff023047),
@@ -46,13 +47,16 @@ class _personState extends State<person> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          child: Text('FotoPerfil'),
-          width: 150,
-          height: 150,
-          alignment: Alignment.center,
-          color: Colors.amber,
-          margin: EdgeInsets.all(48),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Card(
+            elevation: 5,
+            shape: CircleBorder(side: BorderSide.none),
+            child: Container(
+              height: 120,
+              width: 120,
+            ),
+          ),
         ),
       ],
     );
@@ -60,6 +64,7 @@ class _personState extends State<person> {
 
   Widget perfil() {
     return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       elevation: 5,
       child: Container(
         height: 300,
@@ -68,7 +73,19 @@ class _personState extends State<person> {
           children: [
             ListTile(
               title: Text('Nombre:'),
-            )
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Apellidos:'),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Edad:'),
+            ),
+            Divider(),
+            ListTile(
+              title: Text('Correo:'),
+            ),
           ],
         ),
       ),
